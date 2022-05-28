@@ -18,16 +18,30 @@ input{
     width: 20%;
 }
 
+input:hover{
+    background-color: #9caacf;
+}
+
 #calc{
     background-color: white;
     width: 84%; 
     margin: 5px;
 }
 
+.row{
+    display:flex;
+    float:left;
+    width: 100%;
+}
+
 #clear{
     background-color: #e67e7e;
     width: 80%;
-    margin-left: 35px;
+    margin: 1%;
+}
+
+#clear:hover{
+    background-color: #d16262;
 }
 
 .calbody{

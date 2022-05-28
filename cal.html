@@ -3,13 +3,15 @@
     <head>
         <title>My Calculator</title>
         <link rel = "stylesheet" href = "cal.css"/>
+        <script src="cal.js"></script>
+
     </head>
 
     <body>
         <h1><i>What do you want to calculate today?</i></h1>
         <div class = "calbody">
             <form id = "formbody" name = "calform">
-                <input id = "calc" type ="text" name = "answer"> <br> 
+                <input id = "calc" type ="text" name = "answer" > <br> 
                 <input type = "button" value = "7" onclick="calform.answer.value += '7'">
                 <input type = "button" value = "8" onclick="calform.answer.value += '8'">
                 <input type = "button" value = "9" onclick="calform.answer.value += '9'">
@@ -30,7 +32,11 @@
                 <input type = "button" value = "=" onclick="calform.answer.value = eval(calform.answer.value)">
                 <input type = "button" value = "-" onclick="calform.answer.value += '-'">
                 <br>
-                <input id = "clear" type = button value = "Clear" onclick="calform.answer.value = ''">
+                <div class="row">
+                    <input id = "clear" type = button value = "Clear One" onclick="Slicing()">
+                    <input id = "clear" type = button value = "Clear All" onclick="calform.answer.value=''">    
+                </div>
+                
             </form>
         </div>
     </body>
