@@ -1,7 +1,0 @@
-1.try to write a separate js script
-2. user should be able to clear last item as well as all the items
-
-3. there should be a cursor in the answer block
-4. user should be able to delete elements from anywhere
-
-5. try to make a scientific calculator
